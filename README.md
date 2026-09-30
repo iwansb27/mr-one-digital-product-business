@@ -26,16 +26,11 @@ MARKET SIGNAL → IDE → VALIDATION → PRODUCT → LISTING → TRAFFIC → ORD
 - automation/ — API dan workflow terverifikasi
 - checkpoints/ — checkpoint kerja
 
-## Repository Terkait
-- iwansb27/mr-one-shop-manager — MR.ONE Shop Manager, Arsitektur Dua Jalur. Harus dibaca sebelum keputusan integrasi Shopee.
-- Home MR.ONE — pusat orkestrasi.
-
 ## Status Awal
 - Master repository: aktif.
 - MASTER_HANDOFF.md: tersedia.
 - Shopee digital-product eligibility: BELUM TERBUKTI.
 - Shopee seller-management API melalui connector: BELUM TERBUKTI.
-- Repository Shop Manager untuk Shopee: BELUM DIPUTUSKAN; READ → VERIFY terlebih dahulu.
 
 ## Aturan
 Setiap fase harus menghasilkan output nyata. Jangan membangun architecture atau automation sebagai pengganti pekerjaan bisnis. Jangan mengklaim sesuatu SUDAH/TERBUKTI tanpa evidence.
