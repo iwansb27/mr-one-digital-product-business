@@ -20,7 +20,7 @@ Yang masih harus diverifikasi:
 - Apakah akses seller-management resmi tersedia untuk kebutuhan kita.
 - Endpoint yang benar-benar dapat dipakai untuk operasi toko/listing/product/order atau fungsi terkait.
 - Model autentikasi/OAuth, permission/scope, approval, dan batas akses.
-- Apakah akses tersebut dapat dihubungkan ke workflow MR.ONE secara aman.
+- Apakah akses tersebut dapat dihubungkan ke workflow bisnis digital product secara aman.
 
 Aturan:
 - Jangan menyatakan API aktif sebelum endpoint dan permission benar-benar diuji.
@@ -28,24 +28,24 @@ Aturan:
 - Jangan menggunakan credential melalui tool tidak resmi.
 - Free/Zero Rupiah First tetap berlaku.
 
-### 3. Integrasi ke sistem MR.ONE
+### 3. Integrasi ke workflow bisnis
 Status: ⚠️ BELUM TERBUKTI
 
 Tujuan tahap berikutnya:
-- Setelah kemampuan Shopee dan API terbukti, tentukan titik integrasi ke workflow bisnis MR.ONE.
+- Setelah kemampuan Shopee dan API terbukti, tentukan titik integrasi ke workflow bisnis digital product.
 - Integrasi tidak boleh dipaksakan sebelum capability dan permission Shopee terbukti.
-- Home MR.ONE tetap menjadi orchestrator pusat; repository ini adalah master checkpoint bisnis digital product, bukan pengganti Home MR.ONE.
+- Gunakan prinsip READ → VERIFY → DECIDE → ACT.
 
-## Batasan penting
-**MR.ONE Shop Manager TIDAK menjadi bagian dari checkpoint ini.**
+## Batasan checkpoint
+Checkpoint ini **khusus untuk bisnis digital product dan jalur Shopee**.
 
-MR.ONE Shop Manager adalah sistem/repo terpisah dengan konteks dan arsitektur tersendiri. Jangan mencampurkan pembahasannya ke master checkpoint bisnis digital product ini, kecuali Iwan secara eksplisit meminta pembahasan lintas-sistem.
+Sistem, repository, manager, atau proyek lain tidak menjadi bagian dari checkpoint ini dan tidak perlu disebutkan di sini.
 
 ## Next Action
 1. Verifikasi kemampuan Shopee untuk digital product.
 2. Verifikasi akses resmi Shopee Seller Management/Open Platform API.
 3. Catat hasil sebagai FACT / SIGNAL / INFERENCE / ASSUMPTION.
-4. Baru tentukan bentuk integrasi ke MR.ONE.
+4. Baru tentukan bentuk integrasi ke workflow bisnis.
 5. Jangan membangun automation sebelum capability dan permission terbukti.
 
 ## Prinsip
