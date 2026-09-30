@@ -53,16 +53,8 @@ Jangan memberikan credential toko kepada tool yang tidak jelas.
 ## 8. SECURITY
 Gunakan OAuth bila tersedia dan least privilege. Secret/API key tidak masuk source code. Jangan mengirim credential melalui chat bila tidak diperlukan. Jangan memakai automation tidak resmi untuk melewati batasan platform. Semua koneksi harus dapat diaudit.
 
-## 9. MR.ONE SHOP MANAGER
-Nama komponen yang dikunci: MR.ONE Shop Manager.
-Konsep utama: Arsitektur Dua Jalur. Store/channel dapat berbeda; jangan menganggap semua toko otomatis satu repository/pipeline.
+## 9. MASTER REPOSITORY BARU
 
-## 10. REPOSITORY YANG SUDAH ADA
-Repository: iwansb27/mr-one-shop-manager
-Environment yang disebut user: Poe.new.
-Repository ini HARUS dibaca sebelum menentukan apakah Shopee reuse repository, module baru, branch, atau repository terpisah. Jangan mengklaim telah membaca source code tanpa akses repository aktual.
-
-## 11. MASTER REPOSITORY BARU
 Repository: iwansb27/mr-one-digital-product-business
 Fungsi: master repository bisnis produk digital, terpisah dari MR.ONE Shop Manager, Home MR.ONE, dan repo/channel implementasi spesifik.
 Struktur awal:
@@ -79,67 +71,67 @@ mr-one-digital-product-business/
 ├── automation/
 └── checkpoints/
 
-## 12. ATURAN REPOSITORY
-Sebelum membuat repo/module baru, periksa struktur, fungsi, store/channel, posting manager, backend, API, authentication, database/storage, deployment, workflow, multi-store architecture, dan apakah Shopee hanya channel baru.
-Opsi A — Reuse repository jika architecture multi-store. Opsi B — Module/channel baru jika core manager sama. Opsi C — Repository baru jika lifecycle/architecture benar-benar berbeda. Tidak boleh menentukan A/B/C sebelum membaca repository aktual.
+## 10. ATURAN REPOSITORY
+Sebelum membuat repo/module baru untuk bisnis ini, periksa struktur, fungsi, channel, backend, API, authentication, database/storage, deployment, dan workflow yang benar-benar relevan.
+Jangan membuat repository atau module baru sebelum kebutuhan dan arsitektur aktual terbukti.
 
-## 13. HUBUNGAN DENGAN MR.ONE HOME
+## 11. HUBUNGAN DENGAN MR.ONE HOME
 Home MR.ONE adalah pusat orkestrasi. Fondasi yang dikunci: Workspace Agent, Lead Work Orchestrator, Task State, Approval Gateway, Registry, Audit/History.
 Architecture final mengikuti repository dan tool yang benar-benar tersedia.
 
-## 14. MR.ONE DIGITAL PRODUCT FACTORY
+## 12. MR.ONE DIGITAL PRODUCT FACTORY
 Pipeline: IDE → RISET KEBUTUHAN → CONTENT MASTER → STRUCTURE → FLOW / DIAGRAM → VISUAL → TEMPLATE / CHECKLIST → DESIGN → FINAL FILE → PRODUCT LIBRARY → READY FOR SALE → PUBLISH / SELL → MEASURE → ITERATE.
 
-## 15. TOOL PRINCIPLE
+## 13. TOOL PRINCIPLE
 Tools bukan tujuan. ChatGPT = reasoning/content/orchestration; Canva = design; Spreadsheet = business tools; Cloudinary = storage bila diperlukan; GitHub = source/version control; AppDeploy = application/workspace; Poe.new = environment yang sebelumnya digunakan; Shopee = marketplace; Official Shopee API = automation jika benar-benar tersedia.
 Audit tool dengan: AVAILABLE → CONNECTED → READ → WRITE → VERIFIED.
 
-## 16. CONNECTOR STATUS RULE
+## 14. CONNECTOR STATUS RULE
 CONNECTED + READ = bisa membaca. CONNECTED + READ-WRITE = bisa membaca dan mengubah. AVAILABLE NOT CONNECTED = tersedia tetapi belum tersambung. NOT AVAILABLE = tidak tersedia. UNVERIFIED = secara teori mungkin tetapi belum diuji.
 
-## 17. KERJA, BUKAN OMONG
+## 15. KERJA, BUKAN OMONG
 Setiap fase harus menghasilkan output nyata: riset → tabel kandidat; validasi → daftar lolos/tidak; produksi → file nyata; listing → data siap publish; automation → koneksi/API/workflow yang benar-benar diuji.
 Jangan mengganti pekerjaan bisnis dengan pembangunan architecture.
 
-## 18. ANTI-RISET TANPA AKHIR
+## 16. ANTI-RISET TANPA AKHIR
 Gunakan Minimum Viable Evidence. Setelah bukti minimum: STOP RESEARCH → START BUILD.
 Bukti minimum: ada kebutuhan, ada channel, produk dapat dibuat, dan produk allowed/legal pada channel tersebut.
 
-## 19. ATURAN PRODUKSI
+## 17. ATURAN PRODUKSI
 Jangan membuat produk hanya karena AI bisa membuatnya. Buat karena ada masalah nyata + channel + buyer signal + dapat dibuat secara ekonomis.
 
-## 20. STRATEGI PORTFOLIO
+## 18. STRATEGI PORTFOLIO
 20 kandidat → 5–10 divalidasi → 3–5 diproduksi → listing → ukur → produk yang menunjukkan bukti pasar dikembangkan. Jumlah final menyesuaikan kemampuan dan bukti.
 
-## 21. KATEGORI PRIORITAS RISET
+## 19. KATEGORI PRIORITAS RISET
 Keuangan pribadi; UMKM; productivity; content creator; education; business; niche-specific. Contoh niche: UMKM makanan, reseller, affiliate, freelancer, guru, mahasiswa, pemilik toko, content creator, wedding organizer, small business.
 
-## 22. DIFFERENTIATION
+## 20. DIFFERENTIATION
 Jika pasar ramai, cari narrower niche. Contoh Financial Planner → Financial Planner untuk UMKM makanan rumahan; Inventory spreadsheet → Inventory spreadsheet untuk reseller Shopee.
 Nilai dapat berasal dari spesifik, mudah digunakan, bahasa Indonesia, instruksi, formula otomatis, bundle, contoh data, dashboard, checklist, tutorial.
 
-## 23. KUALITAS MINIMUM PRODUK DIGITAL
+## 21. KUALITAS MINIMUM PRODUK DIGITAL
 Mudah digunakan, tidak membingungkan, bahasa jelas, minim typo, visual cukup profesional, asset berlisensi digunakan sesuai aturan, ada instruksi, preview, dan value jelas.
 
-## 24. HARGA
+## 22. HARGA
 Pertimbangkan harga kompetitor, kompleksitas, value, jumlah template, fitur, bundle, target buyer, dan bukti demand. Harga final diuji melalui pasar.
 
-## 25. DEFINISI PRODUK JADI
+## 23. DEFINISI PRODUK JADI
 File final tersedia; sudah diperiksa; preview tersedia; nama dan deskripsi tersedia; harga ditentukan; kategori diketahui; delivery mechanism diketahui; listing siap; channel memperbolehkan produk.
 
-## 26. DEFINISI TOKO SIAP
+## 24. DEFINISI TOKO SIAP
 Seller account aktif; verifikasi selesai; rekening tersedia; store profile tersedia; kategori tersedia; digital product route terbukti; delivery mechanism terbukti; listing dapat dibuat; produk siap publish.
 
-## 27. DEFINISI AUTOMATION SIAP
+## 25. DEFINISI AUTOMATION SIAP
 API tersedia; authentication dan scope tersedia; credential aman; endpoint diketahui; request/response berhasil; error handling tersedia; rate limit dipahami; test berhasil; tidak melanggar kebijakan platform.
 
-## 28. CHECKPOINT 30 SEPTEMBER 2026
-MR.ONE membangun bisnis produk digital dengan Free/Zero Rupiah First, multi-product, market validation wajib, production setelah channel terbukti. Shopee sedang dieksplorasi. Seller account dan digital-product eligibility harus diverifikasi. Official Shopee Open Platform/Partner App adalah jalur yang perlu diperiksa untuk automation. Connector Shopee saat ini bukan bukti seller management API. mr-one-shop-manager harus dibaca sebelum keputusan arsitektur Shopee. MR.ONE Shop Manager menggunakan Arsitektur Dua Jalur. Home MR.ONE tetap pusat orkestrasi.
+## 26. CHECKPOINT 30 SEPTEMBER 2026
+MR.ONE membangun bisnis produk digital dengan Free/Zero Rupiah First, multi-product, market validation wajib, production setelah channel terbukti. Shopee sedang dieksplorasi. Seller account dan digital-product eligibility harus diverifikasi. Official Shopee Open Platform/Partner App adalah jalur yang perlu diperiksa untuk automation. Connector Shopee saat ini bukan bukti seller management API. Home MR.ONE tetap pusat orkestrasi.
 
-## 29. BELUM TERBUKTI
-Belum boleh dianggap selesai: akun dapat menjual semua digital products; PDF/Canva/XLSX tertentu allowed; delivery otomatis semua digital goods; Seller API tersedia di connector; MR.ONE dapat create/edit/delete listing; automation penuh toko aktif; mr-one-shop-manager cocok langsung; produk tertentu pasti laku atau menghasilkan pendapatan.
+## 27. BELUM TERBUKTI
+Belum boleh dianggap selesai: akun dapat menjual semua digital products; PDF/Canva/XLSX tertentu allowed; delivery otomatis semua digital goods; Seller API tersedia di connector; automation penuh toko aktif; produk tertentu pasti laku atau menghasilkan pendapatan.
 
-## 30. NEXT ACTION — URUTAN WAJIB
+## 28. NEXT ACTION — URUTAN WAJIB
 1. Verifikasi Seller Centre / akun Shopee: seller status, verification, bank, store, category, digital product route.
 2. Verifikasi jalur Produk Digital melalui Seller Centre, dokumentasi Shopee resmi, dan Official Open Platform bila relevan.
 3. Jika terbukti, riset banyak produk dengan tabel PRODUCT | SELLER | PRICE | SALES | FORMAT | CATEGORY | DEMAND SIGNAL | COMPETITION | GAP | SOURCE.
@@ -151,31 +143,31 @@ Belum boleh dianggap selesai: akun dapat menjual semua digital products; PDF/Can
 9. Ukur transaksi.
 10. Kembangkan produk yang menunjukkan bukti pasar.
 
-## 31. ATURAN PENTING UNTUK GPT BERIKUTNYA
+## 29. ATURAN PENTING UNTUK GPT BERIKUTNYA
 Jangan mengulang teori jika checkpoint jelas; jangan mengatakan akan mengecek tanpa benar-benar mengecek; jangan klaim connector/API aktif tanpa test; jangan klaim telah membaca repository tanpa membacanya; jangan membuat repo baru tanpa memeriksa repo yang ada; jangan menganggap seller lain sebagai bukti izin akun; jangan menjanjikan produk pasti laku; jangan membangun architecture besar sebelum pekerjaan bisnis; jangan membakar free quota tanpa alasan; jangan menggunakan tool berbayar sebelum alasan bisnis kuat; jangan meminta user mengulang informasi yang sudah ada.
 
-## 32. BACA DULU, BARU BERTINDAK
+## 30. BACA DULU, BARU BERTINDAK
 Untuk pekerjaan teknis: READ → VERIFY → DECIDE → ACT.
 Bukan ASSUME → BUILD → DISCOVER PROBLEM.
 Terutama untuk repository, API, connector, existing application, existing architecture, existing deployment, dan existing credentials.
 
-## 33. STATUS LABEL WAJIB
+## 31. STATUS LABEL WAJIB
 ✅ SUDAH — sudah dilakukan dan ada bukti.
 🟡 BELUM — belum dilakukan.
 🔵 TERBUKTI — sudah diuji dan berhasil.
 ⚠️ BELUM TERBUKTI — secara teori mungkin tetapi belum diuji.
 ❌ TIDAK TERSEDIA — tool/API/fitur memang tidak tersedia.
 
-## 34. MASTER BUSINESS LOOP
+## 32. MASTER BUSINESS LOOP
 MARKET SIGNAL → IDE → VALIDATION → PRODUCT → LISTING → TRAFFIC → ORDER → REVENUE → DATA → IMPROVEMENT → NEW PRODUCT → MORE REVENUE.
 Bukan IDE → BUILD APP → BUILD APP → BUILD APP → BELUM ADA PRODUK.
 
-## 35. FINAL OBJECTIVE
+## 33. FINAL OBJECTIVE
 Menemukan kebutuhan pasar nyata, mengubahnya menjadi produk digital yang dapat dibuat dengan biaya sangat rendah, menjual melalui channel yang benar-benar tersedia, mengukur hasil, lalu membuat sistem semakin otomatis berdasarkan bukti transaksi.
 Urutan prioritas: PASAR → PRODUK → PENJUALAN → DATA → AUTOMATION.
 Bukan TOOL → APP → ARCHITECTURE → AUTOMATION → baru mencari pasar.
 
-## 36. CURRENT MASTER CHECKPOINT
+## 34. CURRENT MASTER CHECKPOINT
 PROJECT: MR.ONE DIGITAL PRODUCT BUSINESS & MARKETPLACE
 CHANNEL: SHOPEE
 MODEL: DIGITAL PRODUCT
@@ -184,16 +176,12 @@ STRATEGI: MULTI-PRODUCT, BUKAN SATU PRODUK
 MARKET VALIDATION: WAJIB
 PRODUCTION: SETELAH CHANNEL TERBUKTI
 MASTER REPOSITORY: iwansb27/mr-one-digital-product-business
-REPOSITORY SHOP MANAGER: iwansb27/mr-one-shop-manager
-REPOSITORY ENVIRONMENT: Poe.new
-STATUS REPOSITORY SHOPEE: BELUM DIPUTUSKAN — HARUS DIBACA DAHULU
-MR.ONE SHOP MANAGER: ARSITEKTUR DUA JALUR
 HOME MR.ONE: CENTRAL ORCHESTRATOR
 SHOPEE SELLER API: BELUM TERBUKTI TERSEDIA DI CONNECTOR SAAT INI
 DIGITAL PRODUCT ELIGIBILITY: HARUS DIVERIFIKASI PADA SELLER ACCOUNT
-NEXT ACTION: VERIFIKASI CHANNEL → BACA REPO → RISET PRODUK → PRODUKSI → LISTING
+NEXT ACTION: VERIFIKASI CHANNEL → RISET PRODUK → PRODUKSI → LISTING
 
-## 37. PERINTAH LANJUTAN
+## 35. PERINTAH LANJUTAN
 Pekerjaan tidak dimulai dari nol. Mulai dari checkpoint terakhir.
 1. Verifikasi apa yang sudah terbukti.
 2. Jangan mengulang yang sudah selesai.
